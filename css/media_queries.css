@@ -1,0 +1,164 @@
+@media screen and (max-width:1680px){
+    .content{
+        width: 75%;
+    }
+    .main_screen .info{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1260px){
+    .content{
+        width: 85%;
+    }
+}
+@media screen and (max-width:1024px){
+    .content{
+        width: 95%;
+    }
+    .tariff_card{
+        width: 100%;
+    }
+    .tariff_pic.plane{
+        width: 60%;
+        left:-2%;
+        bottom:-25%;
+    }
+    .tariff_pic.van{
+        width: 30%;
+        right:-2%;
+        bottom:-1%;
+    }
+    .tariff_pic.pocket_watch{
+        width: 38%;
+        left:-10%;
+        bottom:-6%;
+        transform:rotate(-120deg);
+    }
+    .tariff_pic.box {
+        right: -2%;
+        bottom: -20%;
+        width: 30%;
+         transform:rotate(10deg);
+    }
+}
+@media screen and (max-width:1024px){
+    body{
+        overflow-x: hidden;
+    }
+    .company_info_holder{
+        flex-wrap: wrap;
+    }
+    .company_info_text_holder{
+        width: 100%;
+    }
+    .company_info_pic{
+        width: 100%;
+        height: 300px;
+    }
+    .company_info_pic:before{
+        width: 150%;
+        height: 120%;
+        top:0;
+        left: -25%;
+        transform: none;
+    }
+}
+@media screen and (max-width:768px){
+    
+    h1{
+     font-size: 3rem;
+        line-height:3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .main_screen .info .desc{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .company_info_pic:before{
+        display: none;
+    }
+    .advantage_card{
+        width: 48%;
+    }
+    .feedback_form{
+/*        flex-wrap: wrap;*/
+        flex-direction:column;
+    }
+    .feedback_form .inputs{
+        width: 100%;
+    }
+    .feedback_form .dark_textarea{
+        margin-top: 35px;
+        width: 85%;
+    }
+    .feedback .form_holder{
+        padding: 5% 0;
+    }
+}
+@media screen and (max-width:560px){
+    .advantage_card{
+        width: 100%;
+    }
+    .tariff_card{
+        margin-top: 20%;
+        padding: 1% 0;
+        height: auto;
+        background-position:60% 0%;
+    }
+    .tariff_card .text_part .tariff_desc{
+        font-size:0.7rem;
+    }
+    .tariff_card .text_part .text_body{
+        width: 100%;
+    }
+    .tariff_card .text_part{
+        width: 64%;
+    }
+    .tariff_card .pic_part{
+        width: 35%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: left center;
+    }
+    .tariff_card .pic_part{
+/*        opacity:0.5;*/
+/*        filter: grayscale(100%);*/
+/*        filter: blur(2px);*/
+/*            background-position-x: center;*/
+        background-position: center center;
+    }
+    .tariff_card:nth-child(even) .pic_part{
+        background-position: center center;
+    }
+    .feedback .button p{
+        font-size: 1.3rem;
+    }
+    .feedback_form_content h2{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .dark_input{
+        height: 55px;
+    }
+    .feedback .form_holder{
+        min-height:0;
+    }
+    .feedback,.feedback .form_holder_bg{
+        background-position: center center;
+        height: 140vh;
+        width: auto;
+    }
+    .service_info_text{
+        font-size: 1.2rem;
+    }
+    .service_title{
+        height: 80px;
+        font-size: 1.8rem;
+    }
+    .service_info{
+        bottom:80px;
+    }
+
+}
