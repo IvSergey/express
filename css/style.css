@@ -518,9 +518,13 @@ header {
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center; }
+  .feedback .content {
+    height: 100%;
+    display: flex;
+    align-items: center; }
   .feedback .form_holder {
     width: 100%;
-    min-height: 777px;
+    min-height: 90%;
     height: auto;
     position: relative;
     overflow: hidden;
