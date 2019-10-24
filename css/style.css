@@ -55,7 +55,7 @@ header {
 
 .logo {
   width: 140px;
-  height: 100px;
+  height: 56px;
   background-image: url(../img/logo_white2.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -75,6 +75,29 @@ header {
       opacity: 1; }
     .main_menu li:nth-last-child(1) {
       padding-right: 0; }
+
+.mobile_menu_btn, .mobile_menu {
+  display: none; }
+
+.mobile_menu_btn {
+  color: #fff;
+  font-size: 2rem;
+  height: auto;
+  align-items: flex-end; }
+  .mobile_menu_btn p {
+    width: 100%;
+    text-align: right; }
+
+.mobile_menu.active {
+  display: block;
+  margin-bottom: 15%; }
+
+.mobile_menu {
+  width: 100%;
+  list-style: none;
+  text-align: right; }
+  .mobile_menu a {
+    color: #fff; }
 
 .screen {
   display: flex; }
@@ -371,7 +394,8 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 3%; }
 
 .advantage_card {
   padding: 20px 0;
@@ -506,9 +530,79 @@ header {
   right: -10%;
   bottom: -27%; }
 
+.actions {
+  padding: 5% 0;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .actions .content {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+
+.action {
+  width: 27%;
+  height: 420px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 10px rgba(49, 49, 49, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .45s ease-out; }
+  .action:hover {
+    box-shadow: none; }
+  .action .button {
+    height: 2rem; }
+    .action .button svg path {
+      height: 10px !important;
+      width: 10px !important; }
+    .action .button p {
+      font-size: 0.9rem; }
+  .action .arrow {
+    height: 10px;
+    margin-left: 10px; }
+
+.action_image {
+  width: 80%;
+  height: 50%;
+  background-color: #cccccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  padding: 0 10%; }
+  .action_image h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 30px; }
+    .action_image h3 b {
+      font-size: 1.9rem; }
+
+.personal_account {
+  background-image: url(../img/personal_account.png); }
+
 .calculator {
-  height: 100vh;
-  background-color: #f3f3f3; }
+  background-image: url(../img/calculator.png); }
+
+.action_van {
+  background-image: url(../img/action_van.png); }
+
+.action_info {
+  flex: 1;
+  padding: 15px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  width: 80%; }
+
+.action_text {
+  font-size: 1.1rem;
+  color: #b7b7b7;
+  line-height: 1.5rem;
+  flex: 1; }
 
 .feedback {
   width: 100vw;
@@ -711,5 +805,41 @@ td, th {
   color: #4459c5; }
 .popup_service_text li {
   line-height: 30px; }
+
+footer {
+  padding: 2% 0;
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  footer .contacts {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    footer .contacts .content {
+      margin-top: 1%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      display: flex;
+      justify-content: flex-end; }
+  footer .contact {
+    color: #c4c4c4;
+    font-size: 14px;
+    padding: 0 10px; }
+    footer .contact:nth-last-child(1) {
+      padding-right: 0; }
+  footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem; }
+    footer .copyright p {
+      color: #9b9b9b; }
+      footer .copyright p a {
+        color: #d3d3d3; }
 
 /*# sourceMappingURL=style.css.map */

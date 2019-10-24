@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media_queries.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
+<!--    <link rel="stylesheet" href="font-awesome/font-awesome.min.css">-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body>
    <header>
@@ -19,8 +21,22 @@
                <li><a href="#services">Услуги</a></li>
                <li><a href="#about_company">О компаниии</a></li>
                <li><a href="#tariff">Тарифы</a></li>
-               <li><a href="">Контакты</a></li>
+               <li><a href="#actions">Действия</a></li>
+               <li><a href="#contacts">Контакты</a></li>
            </ul>
+         
+               <div class="mobile_menu_btn">
+                   <p><i class=" fa fa-bars" aria-hidden="true"></i></p>
+                   <ul class="mobile_menu">
+                   <li><a href="#services">Услуги</a></li>
+                       <li><a href="#about_company">О компаниии</a></li>
+                       <li><a href="#tariff">Тарифы</a></li>
+                       <li><a href="#actions">Действия</a></li>
+                       <li><a href="#contacts">Контакты</a></li>
+                   </ul>
+               </div>
+               
+           
        </div>
    </header>
     <section class="screen main_screen">
@@ -49,7 +65,7 @@
 						<div class="owl-item">
                             <div class="service service1">
                                 <div class="service_info">
-                                    <h3 class="service_title"><p><b>Экспрaесс</b>-доставка</p></h3>
+                                    <h3 class="service_title"><p><b>Экспресс</b>-доставка</p></h3>
                                     <p class="service_info_text">Экспресс-доставка документации и грузов по всему миру. Основные преимущества: возможность забора и доставки в выходные дни, скидки до 10% на отправку более двух отправлений с одного адреса, скидки до 20% на услугу «офис-офис», бесплатные доставки по городу документов и РИМ, тариф без скрытых платежей. Вам будет комфортно общаться с менеджерами компании и спокойно, когда Ваше отправление в пути! Отправьте Ваш первый конверт БЕСПЛАТНО!</p>
                                     <button class="button white service_btn" data-service="express"><p>Подробнее</p></button>
                                 </div>
@@ -344,15 +360,50 @@
              </div>
         </div>
     </section>
-    <section class="screen calculator">
+    <section class="screen actions" id="actions">
+       <h2><mark>вы</mark><br>
+                      можете</h2>
         <div class="content">
-            <div class="calculator_holder">
-                <div class="countings">
-                    <form action=""></form>
+           
+            <div class="action">
+                <div class="action_image calculator">
+                    <h3>рассчитать <b>стоимость</b></h3>
                 </div>
-                <div class="result">
-                    
+                <div class="action_info">
+                    <p class="action_text">
+                        Воспользуйтесь онлайн-
+                        калькулятором, чтобы заранее 
+                        рассчитать свои расходы
+                    </p>
+                    <a href="" class="button blue"><p>Рассчитать <i class="arrow fa fa-angle-right" aria-hidden="true"></i></p></a>
                 </div>
+                
+            </div>
+            <div class="action">
+                <div class="action_image personal_account">
+                    <h3>управлять <b>личным кабинетом</b></h3>
+                </div>
+                <div class="action_info">
+                    <p class="action_text">Воспользуйтесь онлайн-
+                    калькулятором, чтобы заранее 
+                    рассчитать свои расходы</p>
+                    <a href="" class="button blue"><p>Перейти  <i class="arrow fa fa-angle-right" aria-hidden="true"></i></p></a>
+                </div>
+                
+            </div>
+            <div class="action">
+                <div class="action_image action_van">
+                    <h3>отслеживать <b>процесс доставки</b></h3>
+                </div>
+                <div class="action_info">
+                    <p class="action_text">
+                        Воспользуйтесь онлайн-
+                        калькулятором, чтобы заранее 
+                        рассчитать свои расходы
+                    </p>
+                    <a href="" class="button blue"><p>Следить  <i class="arrow fa fa-angle-right" aria-hidden="true"></i></p></a>  
+                </div>
+                
             </div>
         </div>
     </section>
@@ -385,6 +436,30 @@
             </div>
         </div>
     </section>
+    <footer id="contacts">
+           <div class="content">
+           <div class="logo"></div>
+           <ul class="main_menu">
+               <li><a href="#services">Услуги</a></li>
+               <li><a href="#about_company">О компаниии</a></li>
+               <li><a href="#tariff">Тарифы</a></li>
+               <li><a href="#actions">Действия</a></li>
+<!--               <li><a href="">Контакты</a></li>-->
+           </ul>
+           
+       </div>
+       <div class="contacts">
+              <div class="content">
+                  <p class="contact">+7 937 185-97-07</p>
+                   <p class="contact">E-mail</p>
+              </div>
+               
+           </div>
+           <div class="content copyright">
+               <p>© Все права защищены. </p><p>Создано в Digital-агентстве <a href="">Ikigai</a></p>
+           </div>
+       
+    </footer>
     <div class="popup">
         <div class="content">
             <div class="popup_item popup_service">
@@ -395,9 +470,6 @@
                       <div class="close-popup js-close-campaign"></div>
                 </div>
                 <div class="popup_service_text">
-                   
-                  
-
                 </div>
             </div>
         </div>

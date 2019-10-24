@@ -95,6 +95,17 @@ function closePopup(){
                 
             });
 }
+$('.mobile_menu_btn').click(function(){
+    if(!$('.mobile_menu').hasClass('active')){
+        $('.mobile_menu').show('fast');
+        $('.mobile_menu').addClass('active');
+        $('header').css('background','rgba(49,49,49,0.8)');
+    }else{
+        $('.mobile_menu').hide('fast');
+        $('.mobile_menu').removeClass('active');
+        $('header').css('background','none');
+    }
+});
 
 //function mobileMenu(action){
 //	var element = document.getElementById('m_menu');
